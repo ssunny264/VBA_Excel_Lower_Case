@@ -1,0 +1,12 @@
+sub Lower_Case()
+
+Dim c As Range
+
+For Each c In Selection.Cells
+
+    'Replace the existing value with the lowercase value of text
+    c.value = LCase(c.value)
+    
+    Next c
+
+end sub
